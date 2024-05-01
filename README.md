@@ -1,9 +1,11 @@
-### Genesis: A Unique Time Series Model for Financial Forecasting
+### Genesis: Time Series Model for Financial Forecasting
 
-Genesis is a pre-trained time series model specifically designed for the financial markets. 
+Genesis is a pre-trained time series model that uses OHLC prices and a proprietary price volatility feature to forecast an underlying asset's price trend. The proprietary volatility feature provides a directional context to the time series. 
+
+The model produces a directional price forecast and risk forecast that identifies a price boundary within which the underlying asset's price should close for the direction forecast to remain true.
 
 #### Proprietary Price Volatility Transformer
-Genesis leverages a proprietary price volatility transformer, which is combined with a hidden Markov model architecture. This allows the model to incorporate the long-term directional price volatility context, enhancing its understanding of financial time series data within a defined context window.
+Genesis leverages a proprietary price volatility transformer to incorporate the long-term directional price volatility context, enhancing its understanding of financial time series data within a defined context window.
 
 #### Zero-Shot Forecasting Capabilities
 With its unique volatility feature, Genesis can perform zero-shot forecasting of the underlying asset's price trend. This forecasting capability spans across multiple asset classes, from tick frequency data to forecasts several weeks ahead.
